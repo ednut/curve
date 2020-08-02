@@ -1,0 +1,36 @@
+<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="19" height="19" fill="#E5E5E5"/>
+<g clip-path="url(#clip0)">
+<rect width="360" height="339" transform="translate(-19 -23)" fill="white"/>
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="-19" y="-23" width="360" height="779">
+<rect x="-19" y="-22.7664" width="360" height="778" fill="white"/>
+</mask>
+<g mask="url(#mask0)">
+<ellipse rx="657.109" ry="569.994" transform="matrix(0.999824 0.0187865 -0.00117436 0.999999 161 173.234)" fill="white"/>
+</g>
+<mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="-19" y="-23" width="360" height="339">
+<rect x="-19" y="-22.7664" width="360" height="338.766" fill="white"/>
+</mask>
+<g mask="url(#mask1)">
+<ellipse rx="657.015" ry="248.195" transform="matrix(0.999967 0.00818144 -0.002697 0.999996 161 62.5784)" fill="url(#paint0_linear)"/>
+</g>
+<rect x="-19" y="-23" width="360" height="64" fill="#F4FCFA"/>
+<rect x="-18" y="-22" width="358" height="62" stroke="#0D1F3B" stroke-opacity="0.02" stroke-width="2"/>
+<g clip-path="url(#clip1)">
+<path d="M0.469683 1.59095L16.3796 17.5008C16.6723 17.7936 17.1475 17.7935 17.4402 17.5008C17.733 17.2081 17.7329 16.7329 17.4402 16.4402L1.53032 0.530316C1.23756 0.237562 0.762393 0.237607 0.469683 0.530317C0.176973 0.823027 0.176974 1.29824 0.469683 1.59095Z" fill="#1FBD97"/>
+<path d="M16.4402 0.559799L0.530316 16.4697C0.237562 16.7624 0.237606 17.2376 0.530316 17.5303C0.823026 17.823 1.29824 17.823 1.59095 17.5303L17.5008 1.62043C17.7936 1.32768 17.7935 0.852508 17.5008 0.559798C17.2081 0.267088 16.733 0.267045 16.4402 0.559799Z" fill="#1FBD97"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear" x1="1367.69" y1="1000.47" x2="243.477" y2="642.23" gradientUnits="userSpaceOnUse">
+<stop stop-color="#2BC6A5" stop-opacity="0.2"/>
+<stop offset="1" stop-color="#2BC6A5" stop-opacity="0"/>
+</linearGradient>
+<clipPath id="clip0">
+<rect width="360" height="339" fill="white" transform="translate(-19 -23)"/>
+</clipPath>
+<clipPath id="clip1">
+<rect width="24" height="24" fill="white" transform="translate(-3 -3)"/>
+</clipPath>
+</defs>
+</svg>

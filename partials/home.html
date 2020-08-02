@@ -1,0 +1,183 @@
+<section class="home-banner">
+    <div class="container">
+        <div class="home-banner--wrapper">
+            <div class="home-banner--info-section">
+                <div class="home-banner--info-section-subtitle">
+                    <span class="line"></span> Creativity and Collaboration
+                </div>
+                <div class="home-banner--info-section-title">
+                    Credible and Reliable Business Agency
+                </div>
+                <div class="home-banner--info-section-caption">
+                    Lorem ipsum dolor sit amet, adipisicing elit. Quod corrupti laborum, quasi? Dolor sapiente amet optio harum dolores, voluptate, tempora dolorem fugiat fuga autem .
+                </div>
+            </div>
+            <div class="home-banner--image-section">
+                <img src="images/home.svg" alt="AfroHub | Network & Collaborate">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="our-services">
+    <div class="container">
+        <div class="sub-title">Our Services</div>
+        <div class="title">Our Special Services</div>
+        <div class="caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.</div>
+        <div class="card-wrap">
+            <div class="card" style="background-image: url('images/cards-bg.png')">
+                <div class="icon"><img src="images/s1.png" alt=""></div>
+                <div class="title">Fundemental nature of creativity and collaboration</div>
+                <div class="caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla neque quam, maxi ut accumsan ut, posuere sit Lorem ipsum quam, maximus ut accumsan.</div>
+            </div>
+            <div class="card" style="background-image: url('images/cards-bg.png')">
+                <div class="icon"><img src="images/s2.png" alt=""></div>
+                <div class="title">Successful collaboration still depends on trust</div>
+                <div class="caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla neque quam, maxi ut accumsan ut, posuere sit Lorem ipsum quam, maximus ut accumsan.</div>
+            </div>
+            <div class="card" style="background-image: url('images/cards-bg.png')">
+                <div class="icon"><img src="images/s3.png" alt=""></div>
+                <div class="title">The improved work-life integration has enabled</div>
+                <div class="caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla neque quam, maxi ut accumsan ut, posuere sit Lorem ipsum quam, maximus ut accumsan.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="video-platform">
+    <div class="container">
+        <div class="sub-title">Watch a Video</div>
+        <div class="title">Checkout some of our works</div>
+        <ul>
+            <li>
+                <a target="_blank" href="https://www.facebook.com/curvenigeria/">
+                    <div class="icon facebook">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.instagram.com/curvenigeria/">
+                    <div class="icon instagram">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="https://twitter.com/curvenigeria">
+                    <div class="icon twitter"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.linkedin.com/company/curve-communications-ng/?viewAsMember=true">
+                    <div class="icon linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                </a>
+            </li>
+        </ul>
+        <div class="iframe-wrap">
+            <div class="iframe">
+                <iframe width="1280" height="720" src="https://www.youtube.com/embed/7cgpMBRPj8o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section>
+    <div class="partners">
+        <div class="title">Some of Our Clients</div>
+        <div class="wrapper">
+            <div class="img"><img class="vodka" src="images/Absolut Vodka Logo.jpg" alt=""></div>
+            <div class="img"><img class="golden" src="images/Golden Penny Logo.jpg" alt=""></div>
+            <div class="img"><img class="martell" src="images/MARTELL Logo.jpg" alt=""></div>
+            <div class="img"><img class="peak" src="images/PEAK Logo.jpg" alt=""></div>
+            <div class="img"><img class="tecno" src="images/TECNO Logo.png" alt=""></div>
+            <div class="img"><img class="e-conext" src="images/E-conext Logo.png" alt=""></div>
+            <div class="img"><img class="happyness" src="images/happyness_logo.jpg" alt=""></div>
+            <div class="img"><img class="inyang" src="images/Inyang Logo.JPG" alt=""></div>
+            <div class="img"><img class="partyworld" src="images/JK PartyWorld logo.jpg" alt=""></div>
+            <div class="img"><img class="span" src="images/SPAN Logo.JPG" alt=""></div>
+            <div class="img"><img class="sti" src="images/STI.png" alt=""></div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+    var d = new Date();
+    var n = d.getFullYear();
+    document.getElementById("year").innerHTML = n;
+
+
+    if (document.readyState !== 'loading') {
+        ready();
+    } else {
+        document.addEventListener('DOMContentLoaded', ready);
+    }
+
+    function ready() {
+        var accordion = document.getElementsByTagName("dt");
+
+        for (var i = 0; i<accordion.length; i++){
+            accordion[i].addEventListener('click', function(){
+                accordionClick(event);
+            
+            });
+        }
+    }
+
+    var accordionClick = (eventHappened) => {
+    console.log(eventHappened);
+    var targetClicked =event.target;
+    console.log(targetClicked);
+    var classClicked = targetClicked.classList;
+    console.log("target clicked: " + targetClicked);
+    console.log(classClicked[0]);
+    while ((classClicked[0] !="description-title")){
+        console.log("parent element: " + targetClicked.parentElement);
+        targetClicked = targetClicked.parentElement;
+        classClicked = targetClicked.classList;
+        console.log("target clicked while in loop:" + targetClicked);
+        console.log("class clicked while in loop: " + classClicked);
+    }
+    var description = targetClicked.nextElementSibling;
+    console.log(description);
+    var expander = targetClicked.children[0];
+    if (description.style.maxHeight){
+        description.style.maxHeight = null;
+        expander.innerHTML = "&#10133;"
+        
+    }
+    else {
+        var allDescriptions = document.getElementsByTagName("dd");
+        for (var i = 0; i < allDescriptions.length; i++){
+            console.log("current description: " + allDescriptions[i]);
+            if (allDescriptions[i].style.maxHeight){
+                console.log("there is a description already open");
+                allDescriptions[i].style.maxHeight = null;
+                allDescriptions[i].previousElementSibling.children[0].innerHTML = "&#10133;"
+            }
+        }
+        description.style.maxHeight = description.scrollHeight + "px";
+        expander.innerHTML = "&#10134;";
+        
+    }
+}
+</script>
