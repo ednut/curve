@@ -111,6 +111,7 @@ header{
     width: 100%;
     top: 0;
     display: none;
+    z-index: 100;
     .title{
         background-color: #f4fdfa;
         text-align: right;
@@ -367,6 +368,9 @@ header{
         line-height: 25px;
         width: 100%;
         margin-bottom: 20px;
+        @media (max-width: 991px){
+            line-height: 40px;
+        }
     }
     .caption{
         margin-bottom: 20px;
@@ -417,6 +421,50 @@ header{
                 margin-bottom: 0;
             }
         }
+    }
+    .contact-card{
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 991px){
+            flex-wrap: wrap;
+        }
+        .card{
+            width: 32%;
+            margin-bottom: 0rem;
+            @media (max-width: 991px){
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+            .icon{
+                width: 6rem;
+                height: 6rem;
+                border-radius: 50%;
+                box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.05);
+                background-color: #FFFFFF;
+                margin: auto;
+                i{
+                    display: inline-block;
+                    color: $brand-color;
+                    font-size: 30px;
+                    padding-top: 2rem;
+                }
+            }
+            .caption{
+                text-align: center;
+                width: 100%;
+                margin-top: 1rem;
+                a{
+                    color: inherit;
+                }
+            }
+        }
+    }
+}
+.map{
+    margin-top: 2rem;
+    iframe{
+        width: 100%;
+        height: 400px;
     }
 }
 
@@ -540,9 +588,6 @@ header{
                         color: #fff;
                     }
                 }
-                .content{
-
-                }
             }
         }
     }
@@ -636,6 +681,127 @@ header{
     }
 }
 
+.about-us{
+    &--banner{
+        width: 100%;
+        height: 15rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        color: #fff;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        @media (max-width: 991px){
+            height: 10rem;
+        }
+        .title{
+            text-transform: capitalize;
+            font-weight: 800;
+            font-size: 30px;
+            padding-top: 6rem;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            @media (max-width: 991px){
+                padding-top: 4rem;
+            }
+        }
+    }
+    
+}
+
+.gallery-wrap{
+    padding: 5rem 0;
+    .gallery{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        a{
+            display: block;
+            width: 31.5%;
+            margin-bottom: 1rem;
+            margin-right: 1rem;
+            height: auto;
+            // overflow: hidden;
+            @media (max-width: 991px){
+                width: 45%;
+            }
+            .img{
+                width: 100%;
+                height: 200px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.11);
+                border-radius: 5px;
+            }
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
+.event{
+    background: #fff;
+    .event-wrap{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        padding: 5rem 0;
+        @media (max-width: 991px){
+            flex-direction: column;
+        }
+        .content{
+            width: 45%;
+            @media (max-width: 991px){
+                width: 100%;
+            }
+            .title{
+                margin-bottom: 20px;
+                color: $brand-color;
+                font-weight: 800;
+                font-size: 19px;
+                margin-top: 7rem;
+                @media (max-width: 991px){
+                    margin-top: 0rem;
+                }
+                span{
+                    display: inline-block;
+                    border: 1px solid $brand-color;
+                    width: 30px;
+                    margin-right: 10px;
+                    vertical-align: middle;
+                
+                }
+            }
+            .text{
+                font-style: normal;
+                font-weight: normal;
+                font-size: 19px;
+                line-height: 32px;
+                width: 100%;
+                margin-bottom: 40px;
+            }
+        }
+        .image{
+            width: 45%;
+            @media (max-width: 991px){
+                width: 100%;
+            }
+            img{
+                width: 30rem;
+                @media (max-width: 991px){
+                    width: 25rem;
+                }
+            }
+        }
+    }
+}
 
 footer{
     border-top: 1px solid #E8ECF6;

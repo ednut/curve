@@ -3,7 +3,7 @@
 	var myApp = angular.module('myApp', ['ui.router', 'myApp.controllers', 'myApp.models']);
 
 	// configure our routes
-	myApp.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
+	myApp.config(function($stateProvider, $urlRouterProvider) {
 	  //
 	  // For any unmatched url, redirect to /state1
 	  $urlRouterProvider.otherwise("/");
@@ -30,16 +30,14 @@
 			templateUrl: "partials/gallery.html"
 		})
 
-		.state('blog', {
-			url: "/blog",
-			templateUrl: "partials/blog.html"
+		.state('newsroom', {
+			url: "/newsroom",
+			templateUrl: "partials/newsroom.html"
 		})
 
 		.state('contact', {
 			url: "/contact",
 			templateUrl: "partials/contact.html"
 		})
-
-		$locationProvider.html5Mode(true);
 
 	});
