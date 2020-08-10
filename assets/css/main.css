@@ -1067,6 +1067,111 @@ header .header-wrap--link-section ul li.bugger-menu .line:first-child {
   }
 }
 
+.press {
+  margin-top: 5rem;
+}
+
+.press .press-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.press .press-wrapper .press-card {
+  margin-bottom: 5rem;
+  -webkit-box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.01), 0 0.2rem 0.3rem rgba(0, 0, 0, 0.04);
+          box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.01), 0 0.2rem 0.3rem rgba(0, 0, 0, 0.04);
+  background: #ffffff;
+  height: auto;
+  font-size: 15px;
+  width: 32%;
+  position: relative;
+}
+
+@media (max-width: 991px) {
+  .press .press-wrapper .press-card {
+    width: 100%;
+  }
+}
+
+.press .press-wrapper .press-card .press-log {
+  padding: 20px 20px;
+}
+
+.press .press-wrapper .press-card .press-log img {
+  width: 7rem;
+  padding-bottom: 0.5rem;
+}
+
+.press .press-wrapper .press-card .press-log.guardian img {
+  width: 9rem;
+  margin-bottom: 14px;
+}
+
+.press .press-wrapper .press-card .press-log.newsexpress img {
+  width: 3rem;
+}
+
+.press .press-wrapper .press-card .press-log.business img {
+  margin-bottom: -15px;
+}
+
+.press .press-wrapper .press-card .press-log.BrandInfoLogo img {
+  margin-bottom: -19px;
+}
+
+.press .press-wrapper .press-card .title {
+  padding: 10px 20px;
+  font-size: 19px;
+  font-weight: 800;
+  height: 6rem;
+}
+
+.press .press-wrapper .press-card .caption {
+  font-size: 19px;
+  font-weight: 400;
+  padding: 0px 20px 10px 20px;
+  height: 13rem;
+}
+
+.press .press-wrapper .press-card a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  padding: 20px;
+  font-size: 1.7rem;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  color: #ee3f5b;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.press .press-wrapper .press-card a span {
+  width: 50%;
+}
+
+.press .press-wrapper .press-card a span:last-child {
+  text-align: right;
+}
+
+.press .press-wrapper .press-card:hover a {
+  background: #ee3f5b;
+  color: #fff;
+}
+
 footer {
   border-top: 1px solid #E8ECF6;
   padding: 60px 0 30px 0;
