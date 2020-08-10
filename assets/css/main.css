@@ -57,6 +57,8 @@ header {
   line-height: 45px;
   width: 100%;
   background: #fbfefd;
+  position: fixed;
+  z-index: 1000;
 }
 
 header .header-wrap {
@@ -208,6 +210,7 @@ header .header-wrap--link-section ul li.bugger-menu .line:first-child {
 .home-banner {
   background-color: #fbfefd;
   min-height: 520px;
+  margin-top: 5rem;
 }
 
 .home-banner--wrapper {
@@ -404,6 +407,44 @@ header .header-wrap--link-section ul li.bugger-menu .line:first-child {
 .partners .img .tecno {
   width: 79px;
   margin-top: 18px;
+}
+
+.partners .img .audax {
+  width: 104px;
+}
+
+.partners .img .dancedeal {
+  width: 104px;
+  margin-top: 15px;
+}
+
+.partners .img .hapa {
+  width: 104px;
+  margin-top: -11px;
+}
+
+.partners .img .huawei {
+  width: 95px;
+}
+
+.partners .img .lac {
+  width: 96px;
+  margin-top: 13px;
+}
+
+.partners .img .random {
+  width: 104px;
+  margin-top: 12px;
+}
+
+.partners .img .turkish {
+  width: 120px;
+  margin-top: -21px;
+}
+
+.partners .img .ydx {
+  width: 74px;
+  margin-top: 17px;
 }
 
 .progress {
@@ -909,6 +950,7 @@ header .header-wrap--link-section ul li.bugger-menu .line:first-child {
   text-align: center;
   position: relative;
   overflow: hidden;
+  margin-top: 5rem;
 }
 
 @media (max-width: 991px) {
