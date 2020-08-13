@@ -89,13 +89,13 @@
 
 <section>
     <div class="partners">
-        <div class="title">Our Clients Portfolio</div>
-        <div class="wrapper">
+        <div class="title">Our Client Portfolio</div>
+        <div class="wrapper page-slider">
             <div class="img"><img class="vodka" src="images/Absolut Vodka Logo.jpg" alt=""></div>
             <div class="img"><img class="golden" src="images/Golden Penny Logo.jpg" alt=""></div>
-            <div class="img"><img class="martell" src="images/MARTELL Logo.jpg" alt=""></div>
             <div class="img"><img class="peak" src="images/PEAK Logo.jpg" alt=""></div>
             <div class="img"><img class="tecno" src="images/TECNO Logo.png" alt=""></div>
+            <div class="img"><img class="martell" src="images/MARTELL Logo.jpg" alt=""></div>            
             <div class="img"><img class="e-conext" src="images/E-conext Logo.png" alt=""></div>
             <div class="img"><img class="happyness" src="images/happyness_logo.jpg" alt=""></div>
             <div class="img"><img class="inyang" src="images/Inyang Logo.JPG" alt=""></div>
@@ -137,59 +137,39 @@
     var n = d.getFullYear();
     document.getElementById("year").innerHTML = n;
 
-
-    if (document.readyState !== 'loading') {
-        ready();
-    } else {
-        document.addEventListener('DOMContentLoaded', ready);
-    }
-
-    function ready() {
-        var accordion = document.getElementsByTagName("dt");
-
-        for (var i = 0; i<accordion.length; i++){
-            accordion[i].addEventListener('click', function(){
-                accordionClick(event);
-            
-            });
-        }
-    }
-
-    var accordionClick = (eventHappened) => {
-    console.log(eventHappened);
-    var targetClicked =event.target;
-    console.log(targetClicked);
-    var classClicked = targetClicked.classList;
-    console.log("target clicked: " + targetClicked);
-    console.log(classClicked[0]);
-    while ((classClicked[0] !="description-title")){
-        console.log("parent element: " + targetClicked.parentElement);
-        targetClicked = targetClicked.parentElement;
-        classClicked = targetClicked.classList;
-        console.log("target clicked while in loop:" + targetClicked);
-        console.log("class clicked while in loop: " + classClicked);
-    }
-    var description = targetClicked.nextElementSibling;
-    console.log(description);
-    var expander = targetClicked.children[0];
-    if (description.style.maxHeight){
-        description.style.maxHeight = null;
-        expander.innerHTML = "&#10133;"
-        
-    }
-    else {
-        var allDescriptions = document.getElementsByTagName("dd");
-        for (var i = 0; i < allDescriptions.length; i++){
-            console.log("current description: " + allDescriptions[i]);
-            if (allDescriptions[i].style.maxHeight){
-                console.log("there is a description already open");
-                allDescriptions[i].style.maxHeight = null;
-                allDescriptions[i].previousElementSibling.children[0].innerHTML = "&#10133;"
+    $('.page-slider').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 7,
+        slidesToScroll: 4,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        responsive: [
+            {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
             }
-        }
-        description.style.maxHeight = description.scrollHeight + "px";
-        expander.innerHTML = "&#10134;";
-        
-    }
-}
+            },
+            {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 2
+            }
+            },
+            {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1
+            }
+            }
+        ]
+        });
+
 </script>
