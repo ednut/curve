@@ -357,8 +357,20 @@ header .header-wrap--link-section ul li.bugger-menu .line:first-child {
   margin: 0 -20px;
 }
 
+@media (max-width: 991px) {
+  .partners .slick-list {
+    margin: 0 -80px;
+  }
+}
+
 .partners .slick-slide > div {
   padding: 0 20px;
+}
+
+@media (max-width: 991px) {
+  .partners .slick-slide > div {
+    padding: 0 80px;
+  }
 }
 
 .partners .img img {
@@ -1315,11 +1327,16 @@ footer .wrap .copy {
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
+  text-align: left;
 }
 
 @media (max-width: 991px) {
   footer .wrap .copy {
     width: 100%;
+    text-align: center;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
 }
 
@@ -1334,7 +1351,7 @@ footer .wrap .social ul {
 
 @media (max-width: 991px) {
   footer .wrap .social ul {
-    text-align: left;
+    text-align: center;
     margin-top: 30px;
     padding-left: 0;
   }
