@@ -359,7 +359,7 @@ header .header-wrap--link-section ul li.bugger-menu .line:first-child {
 
 @media (max-width: 991px) {
   .partners .slick-list {
-    margin: 0 -80px;
+    margin: 0 -40px;
   }
 }
 
@@ -369,7 +369,7 @@ header .header-wrap--link-section ul li.bugger-menu .line:first-child {
 
 @media (max-width: 991px) {
   .partners .slick-slide > div {
-    padding: 0 80px;
+    padding: 0 40px;
   }
 }
 
@@ -395,7 +395,8 @@ header .header-wrap--link-section ul li.bugger-menu .line:first-child {
 }
 
 .partners .img .happyness {
-  margin-top: 4px;
+  margin-top: 17px;
+  width: 70px;
 }
 
 .partners .img .inyang {
@@ -1381,5 +1382,19 @@ footer .wrap .social ul li a img {
   footer .wrap .social {
     width: 100%;
   }
+}
+
+.floating-wpp {
+  right: 15px;
+  left: auto;
+}
+
+.floating-wpp-button {
+  width: 60px !important;
+  height: 60px !important;
+}
+
+.floating-wpp .floating-wpp-popup.active {
+  left: -17rem;
 }
 /*# sourceMappingURL=main.css.map */

@@ -286,20 +286,17 @@ header{
     .slick-list {
         margin: 0 -20px;
         @media (max-width: 991px){
-            margin: 0 -80px; 
+            margin: 0 -40px; 
         }
     }
     .slick-slide>div {
         padding: 0 20px;
         @media (max-width: 991px){
-            padding: 0 80px; 
+            padding: 0 40px; 
         }
     }
     .img{
-        // margin-right: 50px;
         img{
-            // filter: grayscale(100%);
-            // opacity: 0.7;
             margin: auto;
             max-width: 127px;
             width: auto;
@@ -317,7 +314,8 @@ header{
             margin-top: 11px;
         }
         .happyness{
-            margin-top: 4px;
+            margin-top: 17px;
+            width: 70px;
         }
         .inyang{
             width: 57px;
@@ -1047,4 +1045,15 @@ footer{
             }
         }
     }
+}
+.floating-wpp{
+    right: 15px;
+    left: auto;
+}
+.floating-wpp-button{
+    width: 60px!important;
+    height: 60px!important;
+}
+.floating-wpp .floating-wpp-popup.active{
+    left: -17rem;
 }
