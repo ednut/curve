@@ -533,6 +533,9 @@ header{
                 img{
                     width: 13rem;
                     margin-bottom: 14px;
+                    @media (max-width: 991px){
+                        width: 10rem;
+                    }
                 }
             }
             &.newsexpress{
