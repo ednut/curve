@@ -1017,8 +1017,8 @@ header .header-wrap--link-section ul li.bugger-menu .line:first-child {
 
 @media (max-width: 991px) {
   .video-platform .iframe-wrap .iframe iframe {
-    left: 0.5rem;
-    top: 0.5rem;
+    left: 0rem;
+    top: 0rem;
   }
 }
 
@@ -1189,7 +1189,7 @@ header .header-wrap--link-section ul li.bugger-menu .line:first-child {
 
 @media (max-width: 991px) {
   .event .event-wrap .image img {
-    width: 25rem;
+    width: 20rem;
   }
 }
 

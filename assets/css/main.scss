@@ -774,8 +774,8 @@ header{
                 left: 1rem;
                 top: 1rem;
                 @media (max-width: 991px){
-                    left: 0.5rem;
-                    top: 0.5rem;
+                    left: 0rem;
+                    top: 0rem;
                 }
             }
         }
@@ -899,7 +899,7 @@ header{
             img{
                 width: 30rem;
                 @media (max-width: 991px){
-                    width: 25rem;
+                    width: 20rem;
                 }
             }
         }
