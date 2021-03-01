@@ -377,14 +377,7 @@ header .header-wrap--link-section ul li.bugger-menu .line:first-child {
   margin: auto;
   max-width: 127px;
   width: auto;
-  outline: none;
-}
-
-.partners .img img:focus {
-  outline: none;
-}
-.img.slick-slide.slick-active{
-  outline: none;
+  cursor: pointer;
 }
 
 .partners .img img:hover {
@@ -436,7 +429,7 @@ header .header-wrap--link-section ul li.bugger-menu .line:first-child {
 }
 
 .partners .img .audax {
-  width: 104px;
+  width: 70px;
 }
 
 .partners .img .dancedeal {
